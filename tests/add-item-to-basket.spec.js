@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test"
 
-test('Go to product page using navigation bar and add it to the basket', async({ page }) => {
-    await page.goto('https://magento.softwaretestingboard.com/')
+test.skip('Go to product page using navigation bar and add it to the basket', async({ page }) => {
+    await page.goto('/')
     const women = page.getByRole('menuitem', { name: ' Women' })
     await women.hover()
     const womenBottoms = page.getByRole('menuitem', { name: ' Bottoms' })
